@@ -4,7 +4,8 @@
   "description": "intro-testing-jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "jest --watch npm jest"
   },
   "author": "María Vedia",
   "license": "ISC",
