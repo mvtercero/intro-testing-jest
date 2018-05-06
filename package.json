@@ -1,0 +1,14 @@
+{
+  "name": "intro-testing-jest",
+  "version": "1.0.0",
+  "description": "intro-testing-jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "María Vedia",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
