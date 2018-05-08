@@ -1,19 +1,26 @@
-const sum = require('./index.js');
+const fizzbuzz = require('./index.js');
 
 
-describe ('Sum App',()=> {
-  it('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-  expect(sum(3, 4)).toBe(7);
+describe('Fizbuzz', ()=> {
+  it('returns fizzbuzz when num is 15',()=> {
+    expect(fizzbuzz(15)).toBe("fizzbuzz");
   });
 
-  it('adds positive and negative numbers',() => {
-  expect(sum(5,-3)).toBe(2);
-  expect(sum (2,-4)).toBe(-2);
+  it('returns fizz when num is 3',()=> {
+    expect(fizzbuzz(3)).toBe("fizz");
   });
 
-  it('adds decimal numbers',()=> {
-  expect(sum(1.2, 2.3)).toBe(3.5);
-  expect(sum(0.1,-0.2)).toBe(-0.1);
+  it('returns buzz when num is 5',()=> {
+    expect(fizzbuzz(5)).toBe("buzz");
   });
+
+  it('returns 1 when input is 1',()=> {
+    expect(fizzbuzz(1)).toBe(1);
+  });
+
+  it('returns 2 when input is 2',()=> {
+    expect(fizzbuzz(2)).toBe(2);
+  });
+
+
 });
